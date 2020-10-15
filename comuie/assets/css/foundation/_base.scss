@@ -1,0 +1,23 @@
+// @font-face {
+//     font-family: 'genjyu';
+//     src: url('../fonts/GenJyuuGothic-Medium.eot?') format('oldIE'),
+//         url('../fonts/GenJyuuGothic-Medium.woff') format('woff'),
+//         url('../fonts/GenJyuuGothic-Medium.TTF') format('truetype');
+//   }    
+//   body{
+//     font-family: 'genjyu';
+// }
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Noto Sans JP', 'roboto', sans-serif;
+    color: #2d2d2d;
+}
+img{
+    max-width: 100%;
+}

@@ -1,0 +1,106 @@
+.c-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+    &Item{
+        padding: 20px;
+        background-color: #fff;
+        width: 31%;
+        margin-right: calc(8% / 3);
+        margin-bottom: calc(8% / 3);
+        border-radius: 4px;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+    }
+    &__title{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    &__address{
+        margin-top: 8px;
+        padding-left: 14px;
+        position: relative;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 16px;
+            background-image: url(../assets/images/icon/pin.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+        }
+    }
+    &__map{
+        margin-top: 8px;
+    }
+    &__walk{
+        position: relative;
+        margin-top: 8px;
+        padding-left: 14px;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 16px;
+            background-image: url(../assets/images/icon/walk.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+        }
+        &--small{
+            font-size: 1.2rem;
+            margin-left: 8px;
+        }
+        &--big{
+            font-size: 1.6rem;
+        }
+    }
+    &__img{
+        &List{
+            margin-top: 16px;
+            img{
+                object-fit: cover;
+                width: 100%;
+                border-radius: 4px;;
+            }
+            &--1{
+                img{
+                    height: 120px;
+                }
+            }
+            &--2{
+                img{
+                    height: 200px;
+                }
+            }
+            &--3{
+                img{
+                    height: 300px;
+                }
+            }
+        }
+    }
+    &__map{
+        &Embed{
+            border-radius: 4px;
+        }
+    }
+    &__icon{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        li{
+            display: block;
+            width: 45%;
+            height: 45px;
+            filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+}

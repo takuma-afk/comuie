@@ -1,0 +1,17 @@
+.p-top{
+    &__box{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    &__btn{
+        width: 45%;
+        height: 45px;
+        padding: 0;
+    }
+    a{
+        &::before{
+            width: 30px;
+            top: 7px;
+        }
+    }
+}

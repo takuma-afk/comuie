@@ -1,0 +1,25 @@
+.c-bread{
+    margin-top: 60px;
+    display: flex;
+    &Item{
+        margin-left: 30px;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: -15px;
+                background: url(../assets/images/mv/arrow.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                width: 6px;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+.p-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    &__logo img{
+        width: 127.3px;
+    }
+    &__menu{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        @include mq('la'){
+            display: none;
+        }
+    }
+    &__list{
+        display: flex;
+        margin-right: 40px;
+    }
+    &__item + .p-header__item{
+        margin-left: 40px;
+    }
+    &__btn{
+        color: $white;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        background-color: $c-green;
+        border-radius: 50px;
+        & p{
+            text-align: center;
+        }
+    }
+    &-nav{
+        display: none;
+        @include mq('la'){
+            display: block;
+        }
+        &List{/*hamuburder内のスタイル*/
+            display: none;
+            background-color: $white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 50px;
+            z-index: 10;
+            &-menu{
+                font-size:  18px;
+                margin-bottom: 10px;
+                &__item + .p-header-navList-menu__item{
+                    margin-top: 10px;
+                }
+            }
+            &-btn{
+                color: $white;
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+                background-color: $c-green;
+                border-radius: 50px;
+                & p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.p-Hambutton{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.p-hamburger{
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    right: 30px;
+    width: 58px;
+    border-radius: 50%;
+    background-color: none;
+    -webkit-transition: all .3s ease-in-out;
+    z-index: 15;
+}
+.p-headerHamburger{
+    &__line{
+        position: absolute;
+        top: 28px;
+        left: 10px;
+        width: 37px;
+        height: 3px;
+        background-color: $c-black;
+        -webkit-transition: inherit;
+        transition: inherit;
+        &::before{
+            top: -10px;
+        }
+        &::after{
+            top: 10px;
+        }
+        &::before{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+            content: '';
+            -webkit-transition: inherit;
+            transition: inherit;
+        }
+        &::after{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+            content: '';
+            -webkit-transition: inherit;
+            transition: inherit;
+        }
+    }
+}
+.is-drawerActive .p-header-navList{
+    display: block;
+}
+.p-hamburger[aria-expanded="true"]
+.p-headerHamburger__line{
+	background-color: transparent;
+}
+.p-hamburger[aria-expanded="true"]
+.p-headerHamburger__line::before, 
+.p-hamburger[aria-expanded="true"]
+.p-headerHamburger__line::after{
+	top: 0;
+	background-color: $c-black;
+}
+.p-hamburger[aria-expanded="true"]
+.p-headerHamburger__line::before{
+	-webkit-transform:rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.p-hamburger[aria-expanded="true"]
+.p-headerHamburger__line::after{
+	-webkit-transform:rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}

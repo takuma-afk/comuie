@@ -1,0 +1,31 @@
+.c-tab{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    &Item{
+        font-size: 2rem;
+        width: 198px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50px;
+        margin-left: 20px;
+        &:first-child{
+            margin-left: 0;
+        }
+        &-gr{
+            border: solid 2px $c-green;
+            &:first-child{
+                color: $white;
+                background-color: $c-green;
+            }
+        }
+        &-gygr{
+            border: solid 2px $gy-green;
+            &:first-child{
+                color: $white;
+                background-color: $gy-green;
+            }
+        }
+    }
+}

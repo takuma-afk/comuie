@@ -1,0 +1,27 @@
+.c-pagenation{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    &__item{
+        background-color: $c-green;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        color: $white;
+        margin-left: 24px;
+        &:first-child{
+            margin-left: 0;
+        }
+        a{
+            width: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &--white{
+            background-color: $white;
+            color: $c-green;
+        }
+    }
+}

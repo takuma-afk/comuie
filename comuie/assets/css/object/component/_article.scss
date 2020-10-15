@@ -1,0 +1,125 @@
+.c-article{
+    margin-top: 60px;
+    &__btn{
+        width: 200px;
+        height: 44px;
+        background: $c-green;
+        color: $white;
+        border-radius: 50px;
+        margin: 0 auto;
+        a{
+            width: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.c-article__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+  .c-article__item {
+    width: 30%;
+    margin-right: calc(8% / 3);
+    margin-bottom: calc(8% / 3);
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+    img{
+        width: 100%;    
+        height: 150px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    &Title{
+        margin-top: 12px;
+    }
+  }
+
+  .c-article__itemTag {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    font-size: 10px;
+  }
+
+  
+  
+  .c-article__itemTagItem {
+    display: inline-block;
+    margin: 0 .5em .6em 0;
+    padding: .6em;
+    line-height: 1;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 0.5em;
+    span {
+        color:#74AD5D;
+      }
+  }
+
+  
+  .c-article__itemTag_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+  }
+
+  .c-article__itemTagItem_2 {
+    display: inline-block;
+    margin: 2em .5em .6em 0;
+    padding: .6em;
+    line-height: 1;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 0.5em;
+    span {
+        color:#74AD5D;
+      }
+  }
+
+  
+
+
+  .c-article__title {
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+  
+    /* 垂直中心 */
+    justify-content: center;
+  
+    /* 水平中心 */
+    text-align: center;
+  
+    &:before, &:after {
+      border-top: 0.75px solid;
+      content: "";
+      width: 5em;
+  
+      /* 線の長さ */
+    }
+  
+    &:before {
+      margin-right: 1em;
+  
+      /* 文字の右隣 */
+    }
+  
+    &:after {
+      margin-left: 1em;
+  
+      /* 文字の左隣 */
+    }
+  }
+  
+

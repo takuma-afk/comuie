@@ -1,0 +1,9 @@
+.l-cp{
+    background-color: $lt-green;
+    width: 300px;
+    position: absolute;
+    @include mq('la'){
+        width: 100%;
+        position: static;
+    }
+}

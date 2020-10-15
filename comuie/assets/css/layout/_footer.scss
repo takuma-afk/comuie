@@ -1,0 +1,7 @@
+.l-footer{
+    background-color: $c-green;
+    margin-left: 300px;
+    @include mq('la'){
+        margin: 0;
+    }
+}
