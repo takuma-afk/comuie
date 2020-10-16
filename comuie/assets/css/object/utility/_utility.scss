@@ -13,3 +13,38 @@
 	clip-path: inset(50%);
 	margin: -1px;
 }
+.u-fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	&--cp{
+		position: fixed;
+		top: 68px;
+		left: 0;
+		z-index: 10;
+		@include mq('la'){
+			position: static;
+		}
+	} 
+}
+.u-fixed{
+	&--1{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+	}
+	&--2{
+		position: fixed;
+		top: 68px;
+		left: 0;
+		z-index: 10;
+		@include mq('la'){
+			position: static;
+		}
+	}
+
+}

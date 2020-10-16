@@ -19,10 +19,12 @@
     <script src="https://kit.fontawesome.com/3f8963fa24.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="l-header">
+    <header class="l-header u-fixed--1">
         <div class="p-header">
             <div class="p-header__logo">
-                <img src="assets/images/mv/header-logo.svg" alt="コミュイエ">
+                <a href="index.html">
+                    <img src="assets/images/mv/header-logo.svg" alt="コミュイエ">
+                </a>
             </div>
             <div class="p-header__menu">
                 <ul class="p-header__list">
@@ -53,9 +55,31 @@
                     </a>
                 </div>
             </div>
+            <div class="p-header-nav">
+                <div class="p-header-navList">
+                    <ul class="p-header-navList-menu">
+                        <li class="p-header-navList-menu__item"><a href="property.html"><p>物件</p></a></li>
+                        <li class="p-header-navList-menu__item"><a href="map.html"><p>マップ</p></a></li>
+                        <li class="p-header-navList-menu__item"><a href="post.html"><p>記事</p></a></li>
+                        <li class="p-header-navList-menu__item"><a href="about.html"><p>コミュイエって？</p></a></li>
+                    </ul>
+                    <div class="p-header-navList-btn">
+                        <a href="">
+                            <p>ログイン</p>
+                        </a>
+                    </div>
+                </div>
+                <nav class="p-headerHamburger">
+                    <button type="button" id="js-buttonHamburger" class="p-Hambutton p-hamburger" aria-controls="global-nev" aria-expanded="false">
+                        <span class="p-headerHamburger__line">
+                            <span class="u-visuallyHidden">メニューを開閉する</span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
         </div>
     </header>
-    <div class="l-cp">
+    <div class="l-cp u-fixed--2">
         <div class="p-cp">
             <p class="p-cp__title">物件条件</p>
             <ul class="p-cp__menu">
@@ -117,7 +141,7 @@
         </div>
     </div>
     <div class="l-about c-bg">
-        <div class="p-about">
+        <div class="p-about c-bg__inner">
             <ol class="c-bread">
                 <li class="c-breadItem">
                     <a href="">
@@ -166,6 +190,17 @@
     </div>
     <footer class="l-footer">
         <div class="p-footer">
+            <div class="p-footer__box">
+                <ul class="p-footer__sns">
+                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/twitter.png"></a></li>
+                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/facebook.png"></a></li>
+                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/note.png"></a></li>
+                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/instagram.png"></a></li>
+                </ul>
+                <div class="p-footer__logo">
+                    <img src="assets/images/mv/header-logo.svg" alt="コミュイエ">
+                </div>
+            </div>
             <ul class="p-footer__list">
                 <li class="p-footer__item">
                     <a href="">
