@@ -1,8 +1,10 @@
 @charset 'UTF-8';
 /* Slider */
+
+
 .slick-loading .slick-list
 {
-    background: #4e4e4e url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -114,6 +116,7 @@
 [dir='rtl'] .slick-next:before
 {
     content: '←';
+    color: #4e4e4e;
 }
 
 /* Dots */
@@ -205,3 +208,4 @@
     opacity: .75;
     color: black;
 }
+

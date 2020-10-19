@@ -92,6 +92,7 @@
     width: 58px;
     border-radius: 3px;
     background-color: none;
+    transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     z-index: 20;
 }
@@ -103,7 +104,6 @@
         width: 33px;
         height: 3px;
         background-color: $c-black;
-        -webkit-transition: inherit;
         transition: inherit;
         &::before{
             top: -10px;
@@ -118,7 +118,6 @@
             height: 100%;
             background-color: inherit;
             content: '';
-            -webkit-transition: inherit;
             transition: inherit;
         }
         &::after{
@@ -128,7 +127,6 @@
             height: 100%;
             background-color: inherit;
             content: '';
-            -webkit-transition: inherit;
             transition: inherit;
         }
     }
