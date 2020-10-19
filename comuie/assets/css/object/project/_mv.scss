@@ -1,58 +1,86 @@
-
-.p-mv{
+.p-mv {
     margin: 0 auto;
     max-width: 1300px;
-    &__inner{
+    height: 700px;
+    position: relative;
+
+    &__kumo01 {
+        position: absolute;
+        top: 50px;
+        z-index: 0;
+    }
+
+    &__kumo02 {
+        position: absolute;
+        top: 150px;
+        z-index: 0;
+    }
+
+    &__inner {
         display: flex;
         justify-content: space-between;
+
     }
-    &__left{
+
+    &__left {
         text-align: center;
         margin: 100px 85px 0 0;
         width: 100%;
-        @include mq('la'){
+
+        @include mq('la') {
             margin: 130px auto 100px auto;
         }
     }
-    &__logo{
+
+    &__logo {
         margin-bottom: 45px;
-        @include mq('la'){
+
+        @include mq('la') {
             margin-bottom: 40px;
         }
     }
-    &__title{
+
+    &__title {
         font-size: 40px;
         font-weight: bold;
         color: $white;
         letter-spacing: 2px;
         margin-bottom: 15px;
-        @include mq('la'){
+
+        @include mq('la') {
             font-size: 36px;
-            margin-bottom:  40px;
+            margin-bottom: 40px;
         }
-        @include mq('sm'){
+
+        @include mq('sm') {
             font-size: 22px;
         }
     }
-    &__subtitle{
+
+    &__subtitle {
         font-size: 18px;
-        @include mq('la'){
+
+        @include mq('la') {
             font-size: 24px;
             width: 384px;
             margin: 0 auto;
         }
-        @include mq('sm'){
+
+        @include mq('sm') {
             font-size: 14px;
             width: 212px;
         }
     }
-    &__right{
+
+    &__right {
         width: 55%;
-        @include mq('la'){
+
+        @include mq('la') {
             display: none;
         }
     }
-    &__btn{
+
+    &__btn {
         position: absolute;
         bottom: 40px;
         right: 100px;
@@ -66,16 +94,19 @@
         border-radius: 50px;
         text-align: center;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-        &:active{
+
+        &:active {
             position: relative;
             top: 5px;
             box-shadow: none;
         }
-        @include mq('la'){
+
+        @include mq('la') {
             position: static;
             margin: 0 auto;
         }
-        @include mq('sm'){
+
+        @include mq('sm') {
             font-size: 20px;
             width: 260px;
             height: 50px;

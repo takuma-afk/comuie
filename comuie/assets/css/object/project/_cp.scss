@@ -135,28 +135,56 @@
             padding: 20px 20px 30px 20px;
         }
         a{
+            // text-align: center;
+            // position: relative;
+            // display: block;
+            // padding-top: 45px;
+            // font-size: 16px;
+            width: 123px;
+            height: 120px;
+            box-sizing: border-box;
             text-align: center;
             position: relative;
-            display: block;
-            padding-top: 45px;
-            font-size: 16px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            letter-spacing: 0.025em;
+            padding-top: 58px;
+            box-sizing: border-box;
+            overflow: hidden;
+            background: #fff;
+            border: 2px solid #000;
+            -webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.15);
+            -moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.15);
+            box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.15);
         }
         &01{
             &::before{
-                background-image: url("../assets/images/icon/satei_or.svg");
-                display: inline-block;
-                content: '';
-                width: 38px;
+                // background-image: url("../assets/images/icon/satei_or.svg");
+                // display: inline-block;
+                // content: '';
+                // width: 38px;
+                // position: absolute;
+                // top: 0;
+                // left: 55%;
+                // transform: translateX(-50%);
+                // -webkit-transform: translateX(-50%);
+                // -ms-transform: translateX(-50%);
+                // z-index: 5;
+                // height: 100%;
+                // background-size: contain;
+                // background-repeat: no-repeat;
+                content: "";
+                display: block;
                 position: absolute;
-                top: 0;
-                left: 55%;
-                transform: translateX(-50%);
-                -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                z-index: 5;
-                height: 100%;
-                background-size: contain;
-                background-repeat: no-repeat;
+                width: 34px;
+                height: 26px;
+                left: 0;
+                right: 0;
+                top: 47px;
+                margin: auto;
+                background: url(../assets/images/icon/satei_or.svg);
+                background-size: cover;
                 @include mq('la'){
                     left: 51%;
                 }

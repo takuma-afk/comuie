@@ -52,7 +52,8 @@ img {
   padding: 40px 90px 40px 50px;
   height: 768px;
   background-image: url("../assets/images/mv/mv.svg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -60,6 +61,12 @@ img {
   .l-mv {
     position: static;
     padding: 0px 20px 70px 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .l-mv {
+    background-size: cover;
   }
 }
 
@@ -1124,6 +1131,20 @@ img {
 .p-mv {
   margin: 0 auto;
   max-width: 1300px;
+  height: 700px;
+  position: relative;
+}
+
+.p-mv__kumo01 {
+  position: absolute;
+  top: 50px;
+  z-index: 0;
+}
+
+.p-mv__kumo02 {
+  position: absolute;
+  top: 150px;
+  z-index: 0;
 }
 
 .p-mv__inner {
