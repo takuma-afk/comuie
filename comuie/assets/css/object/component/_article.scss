@@ -35,6 +35,9 @@
         height: 150px;
         object-fit: cover;
         border-radius: 4px;
+        @include mq('la'){
+          height: 225px;
+        }
     }
     &Title{
         margin-top: 12px;
@@ -68,19 +71,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    list-style-type: none;
-    margin: 0 auto;
+    margin: 40px auto 0;
     padding: 0;
   }
 
   .c-article__itemTagItem_2 {
     display: inline-block;
-    margin: 2em .5em .6em 0;
+    margin: 0 10px 10px 0;
     padding: .6em;
     line-height: 1;
     text-decoration: none;
     background-color: #fff;
-    border-radius: 0.5em;
+    border-radius: 4px;
     span {
         color:#74AD5D;
       }

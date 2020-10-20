@@ -15,4 +15,19 @@
             top: 7px;
         }
     }
+    &__info{
+        &Item{
+            &__box{
+                margin-top: 20px;
+            }
+            &__btn{
+                width: 48%;
+                height: 45px;
+                &::before{
+                    width: 30px;
+                    top: 7px;
+                }        
+            }
+        }
+    }
 }

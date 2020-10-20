@@ -16,16 +16,24 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="./assets/css/foundation/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
     <script src="https://kit.fontawesome.com/3f8963fa24.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="l-mv">
         <div class="p-mv">
+
             <div class="p-mv__inner">
+
                 <div class="p-mv__left">
                     <h1 class="p-mv__logo">
                         <img src="assets/images/mv/logo.svg" alt="コミュイエ">
@@ -40,11 +48,14 @@
             <div class="p-mv__right-btn p-mv__btn">
                 <a href="">物件リクエスト</a>
             </div>
+            <picture><img src="assets/images/mv/kumo01.svg" alt="" class="p-mv__kumo01"></picture>
+            <picture><img src="assets/images/mv/kumo02.svg" alt="" class="p-mv__kumo02"></picture>
         </div>
     </div>
     <header class="l-header">
         <div class="p-header">
             <div class="p-header__logo">
+
                 <img src="assets/images/mv/header-logo.svg" alt="コミュイエ">
             </div>
             <div class="p-header__menu">
@@ -79,10 +90,18 @@
             <div class="p-header-nav">
                 <div class="p-header-navList">
                     <ul class="p-header-navList-menu">
-                        <li class="p-header-navList-menu__item"><a href="property.html"><p>物件</p></a></li>
-                        <li class="p-header-navList-menu__item"><a href="map.html"><p>マップ</p></a></li>
-                        <li class="p-header-navList-menu__item"><a href="post.html"><p>記事</p></a></li>
-                        <li class="p-header-navList-menu__item"><a href="about.html"><p>コミュイエって？</p></a></li>
+                        <li class="p-header-navList-menu__item"><a href="property.html">
+                                <p>物件</p>
+                            </a></li>
+                        <li class="p-header-navList-menu__item"><a href="map.html">
+                                <p>マップ</p>
+                            </a></li>
+                        <li class="p-header-navList-menu__item"><a href="post.html">
+                                <p>記事</p>
+                            </a></li>
+                        <li class="p-header-navList-menu__item"><a href="about.html">
+                                <p>コミュイエって？</p>
+                            </a></li>
                     </ul>
                     <div class="p-header-navList-btn">
                         <a href="">
@@ -91,7 +110,8 @@
                     </div>
                 </div>
                 <nav class="p-headerHamburger">
-                    <button type="button" id="js-buttonHamburger" class="p-Hambutton p-hamburger" aria-controls="global-nev" aria-expanded="false">
+                    <button type="button" id="js-buttonHamburger" class="p-Hambutton p-hamburger"
+                        aria-controls="global-nev" aria-expanded="false">
                         <span class="p-headerHamburger__line">
                             <span class="u-visuallyHidden">メニューを開閉する</span>
                         </span>
@@ -125,17 +145,13 @@
                 <input class="p-cp__customSearch" type="search" name="search" placeholder="キーワードを入力">
                 <input class="p-cp__customButton" type="submit" name="submit" value="検索">
             </div>
-            <div class="p-cp__box" id="p-cp__boxSp">
-                <div class="p-cp__btn">
-                    <a class="p-cp__btn01" href="">
-                        <p>査定</p>
-                    </a>
-                </div>
-                <div class="p-cp__btn">
-                    <a class="p-cp__btn02" href="">
-                        <p>お気に入り</p>
-                    </a>
-                </div>
+            <div class="p-cp__box c-btn" id="p-cp__boxSp">
+                <a class="p-cp__btn p-cp__btn--01 c-btn__btn c-btn__btn--01" href="">
+                    <p>査定</p>
+                </a>
+                <a class="p-cp__btn p-cp__btn--02 c-btn__btn c-btn__btn--02" href="">
+                    <p>お気に入り</p>
+                </a>
             </div>
             <ul class="p-cp__sns">
                 <li class="p-cp__snsItem">
@@ -194,15 +210,9 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="p-cp__box p-top__box">
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn01" href="">
-                            </a>
-                        </div>
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn02" href="">
-                            </a>
-                        </div>
+                    <div class="p-top__infoItem__box c-btn" id="p-cp__boxSp">
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--01" href=""></a>
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--02" href=""></a>
                     </div>
                 </li>
                 <li class="c-infoItem">
@@ -235,17 +245,11 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="p-cp__box p-top__box">
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn01" href="">
-                            </a>
-                        </div>
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn02" href="">
-                            </a>
-                        </div>
+                    <div class="p-top__infoItem__box c-btn" id="p-cp__boxSp">
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--01" href=""></a>
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--02" href=""></a>
                     </div>
-                </li>                
+                </li>
                 <li class="c-infoItem">
                     <p class="c-info__title"><a href="">プリオール五反田</a></p>
                     <p class="c-info__address">東京都品川区西五反田</p>
@@ -276,17 +280,11 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="p-cp__box p-top__box">
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn01" href="">
-                            </a>
-                        </div>
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn02" href="">
-                            </a>
-                        </div>
+                    <div class="p-top__infoItem__box c-btn" id="p-cp__boxSp">
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--01" href=""></a>
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--02" href=""></a>
                     </div>
-                </li>                
+                </li>
                 <li class="c-infoItem">
                     <p class="c-info__title"><a href="">プリオール五反田</a></p>
                     <p class="c-info__address">東京都品川区西五反田</p>
@@ -317,17 +315,11 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="p-cp__box p-top__box">
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn01" href="">
-                            </a>
-                        </div>
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn02" href="">
-                            </a>
-                        </div>
+                    <div class="p-top__infoItem__box c-btn" id="p-cp__boxSp">
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--01" href=""></a>
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--02" href=""></a>
                     </div>
-                </li>                
+                </li>
                 <li class="c-infoItem">
                     <p class="c-info__title"><a href="">プリオール五反田</a></p>
                     <p class="c-info__address">東京都品川区西五反田</p>
@@ -358,17 +350,11 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="p-cp__box p-top__box">
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn01" href="">
-                            </a>
-                        </div>
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn02" href="">
-                            </a>
-                        </div>
+                    <div class="p-top__infoItem__box c-btn" id="p-cp__boxSp">
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--01" href=""></a>
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--02" href=""></a>
                     </div>
-                </li>                
+                </li>
                 <li class="c-infoItem">
                     <p class="c-info__title"><a href="">プリオール五反田</a></p>
                     <p class="c-info__address">東京都品川区西五反田</p>
@@ -399,21 +385,15 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="p-cp__box p-top__box">
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn01" href="">
-                            </a>
-                        </div>
-                        <div class="p-cp__btn p-top__btn">
-                            <a class="p-cp__btn02" href="">
-                            </a>
-                        </div>
+                    <div class="p-top__infoItem__box c-btn" id="p-cp__boxSp">
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--01" href=""></a>
+                        <a class="p-top__infoItem__btn c-btn__btn c-btn__btn--02" href=""></a>
                     </div>
-                </li>            
+                </li>
             </ul>
             <div class="c-article">
                 <h2 class="c-article__title">新規店舗</h2>
-                <ul class="c-article__list">
+                <ul class="c-article__list slider">
                     <li class="c-article__item">
                         <a href="">
                             <img src="./assets/images/03/03-01.jpg" alt="">
@@ -462,7 +442,7 @@
             </div>
             <div class="c-article">
                 <h2 class="c-article__title">新着記事</h2>
-                <ul class="c-article__list">
+                <ul class="c-article__list slider">
                     <li class="c-article__item">
                         <a href="">
                             <img src="./assets/images/03/03-01.jpg" alt="">
@@ -511,7 +491,7 @@
             </div>
             <div class="c-article">
                 <h2 class="c-article__title">おすすめ</h2>
-                <ul class="c-article__list">
+                <ul class="c-article__list slider">
                     <li class="c-article__item">
                         <a href="">
                             <img src="./assets/images/03/03-01.jpg" alt="">
@@ -560,7 +540,7 @@
             </div>
             <div class="c-article">
                 <h2 class="c-article__title">注目記事</h2>
-                <ul class="c-article__list">
+                <ul class="c-article__list slider">
                     <li class="c-article__item">
                         <a href="">
                             <img src="./assets/images/03/03-01.jpg" alt="">
@@ -613,10 +593,10 @@
         <div class="p-footer">
             <div class="p-footer__box">
                 <ul class="p-footer__sns">
-                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/twitter.png"></a></li>
-                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/facebook.png"></a></li>
-                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/note.png"></a></li>
-                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/instagram.png"></a></li>
+                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/twitter.png" alt="Twitter"></a></li>
+                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/facebook.png" alt="Facebook"></a></li>
+                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/note.png" alt="note"></a></li>
+                    <li class="p-footer__snsItem"><a href=""><img src="assets/images/sns/instagram.png" alt="Instagram"></a></li>
                 </ul>
                 <div class="p-footer__logo">
                     <img src="assets/images/mv/header-logo.svg" alt="コミュイエ">
@@ -647,9 +627,10 @@
             <small class="p-footer__copy">COPYRIGHT ©COMMUIE INC.ALL RIGHTS RESERVED.</small>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./assets/scripts/script.js"></script>
+    <script src="assets/scripts/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/mv_velocity.js"></script>
 </body>
 
 </html>
