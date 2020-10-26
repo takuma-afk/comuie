@@ -2,4 +2,24 @@
     &__title{
         margin-top: 40px;
     }
+    &__list{
+        @include mq('la'){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        @include mq('la'){
+            width: 100%;
+        }    
+        &Title{
+            @include mq('la'){
+                width: 100%;
+            }    
+        }
+        &Tag{
+            @include mq('la'){
+                width: 100%;
+            }    
+        }
+    }
 }

@@ -1,6 +1,12 @@
 .u-flex{
     display: flex;
 }
+.u-spOnly{
+	display: none;
+	@include mq('la'){
+		display: block;
+	}
+}
 .u-visuallyHidden{
     position: absolute;
 	white-space: nowrap;

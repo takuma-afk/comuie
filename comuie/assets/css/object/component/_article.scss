@@ -6,7 +6,7 @@
         background: $c-green;
         color: $white;
         border-radius: 50px;
-        margin: 0 auto;
+        margin: 20px auto 0;
         a{
             width: inherit;
             height: inherit;
@@ -30,17 +30,22 @@
     &:nth-child(3n){
         margin-right: 0;
     }
+    @include mq('la'){
+      margin-right: 0;
+      margin-bottom: 0;
+    }
     img{
         width: 100%;    
         height: 150px;
         object-fit: cover;
         border-radius: 4px;
-        @include mq('la'){
-          height: 225px;
-        }
     }
     &Title{
-        margin-top: 12px;
+      margin-top: 5px;
+      @include mq('la'){
+        width: 80%;
+        margin: 12px auto 0;
+      }
     }
   }
 
@@ -49,6 +54,10 @@
     flex-wrap: wrap;
     margin: 5px;
     font-size: 10px;
+    @include mq('la'){
+    width: 80%;
+    margin: 5px auto 5px;
+    }
   }
 
   
@@ -87,33 +96,22 @@
         color:#74AD5D;
       }
   }
-
-  
-
-
   .c-article__title {
     display: flex;
     align-items: center;
     font-size: 27px;
-  
-    /* 垂直中心 */
     justify-content: center;
-  
-    /* 水平中心 */
     text-align: center;
-  
+    @include mq('la'){
+      font-size: 1.8rem;
+    }
     &:before, &:after {
       border-top: 0.75px solid;
       content: "";
       width: 5em;
-  
-      /* 線の長さ */
     }
-  
     &:before {
       margin-right: 1em;
-  
-      /* 文字の右隣 */
     }
   
     &:after {

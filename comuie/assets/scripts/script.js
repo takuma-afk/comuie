@@ -30,4 +30,22 @@ $(function () {
     });
   });
 
-  $('.slider').slick();
+  function checkBreakPoint() {
+    w = $(window).width();
+    if (w <= 1000) {
+      // スマホ向け（767px以下のとき）
+      $('.slider').slick({
+        centerMode: true,
+        centerPadding: '20%'
+      });
+    } else {
+      // PC向け
+      $('.slider').slick('unslick');
+    }
+  }
+  // ウインドウがリサイズする度にチェック
+  $(window).resize(function(){
+    checkBreakPoint();
+  });
+  // 初回チェック
+  checkBreakPoint();
