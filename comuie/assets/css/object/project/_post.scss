@@ -1,25 +1,33 @@
-.p-post{
-    &__title{
+.p-post {
+    &__title {
         margin-top: 40px;
     }
-    &__list{
-        @include mq('la'){
+
+    &__list {
+        @include mq('la') {
             flex-direction: column;
         }
     }
-    &__item{
-        @include mq('la'){
+
+    &__item {
+        @include mq('la') {
             width: 100%;
-        }    
-        &Title{
-            @include mq('la'){
-                width: 100%;
-            }    
         }
-        &Tag{
-            @include mq('la'){
+
+        @include mq('sm') {
+            padding-bottom: 2.5rem;
+        }
+
+        &Title {
+            @include mq('la') {
                 width: 100%;
-            }    
+            }
+        }
+
+        &Tag {
+            @include mq('la') {
+                width: 100%;
+            }
         }
     }
 }

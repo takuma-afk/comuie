@@ -1,32 +1,37 @@
-.p-top{
-    &__box{
+.p-top {
+    &__box {
         margin-top: 20px;
         margin-bottom: 0;
         display: none;
     }
-    &__btn{
+
+    &__btn {
         width: 45%;
         height: 45px;
         padding: 0;
     }
-    a{
-        &::before{
+
+    a {
+        &::before {
             width: 30px;
             top: 7px;
         }
     }
-    &__info{
-        &Item{
-            &__box{
+
+    &__info {
+        &Item {
+            &__box {
                 margin-top: 20px;
             }
-            &__btn{
+
+            &__btn {
                 width: 48%;
                 height: 45px;
-                &::before{
+
+                &::before {
                     width: 30px;
                     top: 7px;
-                }        
+                }
             }
         }
     }

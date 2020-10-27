@@ -79,6 +79,12 @@ img {
   z-index: 0;
 }
 
+@media (max-width: 600px) {
+  .l-mv__kumo02 {
+    top: 420px;
+  }
+}
+
 .c-article {
   margin-top: 60px;
 }
@@ -681,7 +687,7 @@ img {
 
 @media (max-width: 600px) {
   .p-cp__menuItem {
-    width: 295px;
+    width: 350px;
   }
 }
 
@@ -1220,6 +1226,12 @@ img {
   }
 }
 
+@media (max-width: 600px) {
+  .p-post__item {
+    padding-bottom: 2.5rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .p-post__itemTitle {
     width: 100%;
@@ -1287,7 +1299,7 @@ img {
 
 @media (max-width: 1000px) {
   .p-mv__left {
-    margin: 130px auto 100px auto;
+    margin: 130px auto 50px auto;
   }
 }
 
@@ -1353,7 +1365,7 @@ img {
 
 .p-mv__btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   right: 100px;
   display: block;
   font-size: 24px;
