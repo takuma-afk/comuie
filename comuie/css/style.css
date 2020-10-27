@@ -57,6 +57,7 @@ img {
   background-position: center;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 @media (max-width: 1000px) {
@@ -69,14 +70,14 @@ img {
 .l-mv__kumo01 {
   position: absolute;
   top: 50px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .l-mv__kumo02 {
   position: absolute;
   top: 300px;
   left: -50px;
-  z-index: 0;
+  z-index: -1;
 }
 
 @media (max-width: 600px) {
@@ -1287,6 +1288,7 @@ img {
   max-width: 1300px;
   height: 700px;
   position: relative;
+  z-index: 2;
 }
 
 .p-mv__inner {
